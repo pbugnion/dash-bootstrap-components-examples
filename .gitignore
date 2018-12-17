@@ -1,3 +1,6 @@
 
 dbc_custom_components/_components
+*.egg-info/
+
 node_modules
+__pycache__
