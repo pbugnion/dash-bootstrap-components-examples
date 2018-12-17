@@ -8,7 +8,7 @@
     "dash-bootstrap-components": "0.2.6-dev.3"
   },
   "scripts": {
-    "demo": "webpack-dev-server --hot --inline --port=8888 --config=webpack.demo.config.js",
+    "demo": "webpack-dev-server --hot --inline --port=8888 --config=webpack.config.demo.js",
     "build-dist": "npm run clean:py && npm run build:py && webpack --config=webpack.config.dist.js",
     "build:py": "mkdirp dbc_custom_components/_components && dash-generate-components ./src/components dbc_custom_components/_components && move-cli dbc_custom_components/_components/_imports_.py dbc_custom_components/_components/__init__.py",
     "clean:py": "mkdirp dbc_custom_components/_components && rimraf dbc_custom_components/_components",
